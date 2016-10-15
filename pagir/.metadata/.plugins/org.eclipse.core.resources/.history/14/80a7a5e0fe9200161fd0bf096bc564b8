@@ -1,0 +1,17 @@
+package com.ajsivsan.domain;
+
+import java.sql.Date;
+
+import javax.persistence.Entity;
+
+@Entity
+public class UserImages {
+	@Id
+	private String username;
+	private String img_id;
+	private byte[] dr_lic_img;
+	private byte[] other_id;
+	private Date upd_timestamp;
+	private Date last_upd_timestamp;
+	//contraint fk_username FOREIGN KEY(username) REFERENCES pagir.user_basic_info(username) 
+}

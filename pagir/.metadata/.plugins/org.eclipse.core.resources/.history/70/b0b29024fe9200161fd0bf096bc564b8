@@ -1,0 +1,27 @@
+package com.ajsivsan.domain;
+
+import java.sql.Date;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
+public class UserExtraInfo {
+	@Id
+	@GeneratedValue
+	private String user_id;
+	private String username;
+	private String full_nme;
+	private char gender;
+	private Date dob;
+	private String contact_num;
+	private String e1_contact_num;
+	private String e2_contact_num;
+	private String e_msg;
+	private String dr_lic_numb;
+	private String dr_lic_exp;
+	private Date crte_timestamp;
+	private Date last_upd_timestamp;
+	contraint fk_username FOREIGN KEY(username) REFERENCES pagir.user_basic_info(username));
+}

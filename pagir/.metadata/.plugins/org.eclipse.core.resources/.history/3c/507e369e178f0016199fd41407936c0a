@@ -1,0 +1,35 @@
+create database pagir;
+
+create table pagir.user_basic_info
+(
+username varchar(25),
+password varchar(100),
+email varchar(100),
+gender char(1),
+user_type char(4),
+);
+
+create table pagir.user_extra_info
+(
+username varchar(25),
+full_nme varchar(100),
+gender char(1),
+dob timestamp,
+contact_num varchar(26),
+e1_contact_num varchar(26),
+e2_contact_num varchar(26)
+e_msg varchar(160),
+dr_lic_numb varchar(25),
+dr_lic_exp timestamp, 
+);
+
+
+create table pagir.user_images
+(
+username varchar(25),
+
+);
+create table pagir.user_authenticate;
+create table pagir.user_activities;
+create table pagir.user_requests;
+create table pagir.user_current_location;

@@ -1,0 +1,18 @@
+create database pagir;
+create table pagir.user_basic_info
+(username varchar(25),
+password varchar(100),
+full_name varchar(100),
+email varchar(100),
+gender char(1),
+user_type char(4),
+
+);
+create table pagir.user_extra_info
+(
+);
+create table pagir.user_images;
+create table pagir.user_authenticate;
+create table pagir.user_activities;
+create table pagir.user_requests;
+create table pagir.user_current_location;

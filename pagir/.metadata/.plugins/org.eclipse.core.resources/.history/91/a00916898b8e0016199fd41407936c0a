@@ -1,0 +1,9 @@
+package com.ajsivsna.controllers;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class RegisterController {
+
+	@RequestMapping("/register")
+}

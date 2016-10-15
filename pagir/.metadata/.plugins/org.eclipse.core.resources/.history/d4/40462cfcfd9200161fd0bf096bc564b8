@@ -1,0 +1,19 @@
+package com.ajsivsan.domain;
+
+public class UserExtraInfo {
+
+	private String user_id bigint primary key,
+	private String username varchar(25),
+	private String full_nme varchar(100),
+	private char gender char(1),
+	private Date dob timestamp,
+	private String contact_num varchar(26),
+	private String e1_contact_num varchar(26),
+	private String e2_contact_num varchar(26)
+	private String e_msg varchar(160),
+	private String dr_lic_numb varchar(25),
+	private String dr_lic_exp timestamp,
+	private Date crte_timestamp timestamp
+	private Date last_upd_timestamp timestamp,
+	contraint fk_username FOREIGN KEY(username) REFERENCES pagir.user_basic_info(username));
+}

@@ -1,0 +1,13 @@
+package com.ajsivsan.domain;
+
+import java.sql.Date;
+
+public class UserBasicInfo {
+	private String username;
+	private String password;
+	private String email;
+	private char gender;
+	private String userType;
+	private Date crte_timestamp;
+	private Date last_upd_timestamp;
+}

@@ -1,0 +1,6 @@
+package com.ajsivsna.controllers;
+
+@RestController
+public class RegisterController {
+
+}

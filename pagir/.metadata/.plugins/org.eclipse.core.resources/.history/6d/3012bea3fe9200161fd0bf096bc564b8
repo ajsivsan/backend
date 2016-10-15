@@ -1,0 +1,11 @@
+package com.ajsivsan.domain;
+
+public class UserImages {
+	private String username;
+	private String img_id;
+	private byte[] dr_lic_img;
+	private byte[] other_id;
+	private Date upd_timestamp timestamp
+	last_upd_timestamp timestamp,
+	contraint fk_username FOREIGN KEY(username) REFERENCES pagir.user_basic_info(username) 
+}
